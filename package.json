@@ -1,0 +1,36 @@
+{
+  "name": "angular-webpack-typescript-starter",
+  "version": "0.1.0",
+  "author": "Nir Kaufman <nirkaufman@gmail.com>",
+  "description": "minimal starter project",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "TypeScript",
+    "webpack"
+  ],
+  "main": "webpack.config.js",
+  "scripts": {
+    "server": "webpack-dev-server",
+    "prestart": "npm install & tsd install",
+    "start" : "npm run server"
+  },
+  "author": "Nir Kaufman <nirkaufman@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "0.15.1",
+    "file-loader": "0.8.4",
+    "node-libs-browser": "0.5.2",
+    "raw-loader": "0.5.1",
+    "style-loader": "0.12.3",
+    "url-loader": "0.5.6",
+    "tsd": "0.6.4",
+    "typescript": "1.5.3",
+    "typescript-simple-loader": "0.3.2",
+    "webpack": "1.9.11",
+    "webpack-dev-server": "1.9.0"
+  },
+  "dependencies": {
+    "angular": "1.4.1"
+  }
+}
