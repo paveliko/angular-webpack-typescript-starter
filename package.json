@@ -12,7 +12,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "server": "webpack-dev-server",
-    "prestart": "npm install & tsd install",
+    "prestart": "npm install && tsd install",
     "start" : "npm run server"
   },
   "author": "Nir Kaufman <nirkaufman@gmail.com>",
