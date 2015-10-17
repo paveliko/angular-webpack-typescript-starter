@@ -1,19 +1,25 @@
 import 'angular';
-import 'index.css';
+
+function App () {
+  return {
+    restrict: 'E',
+    template: '<h1>{{ App.what }}</h1>',
+    controller: AppController,
+    controllerAs: 'App'
+  }
+}
 
 class AppController {
 
-  title: string;
-  info: any;
+  what: string;
 
   constructor() {
-    this.title = 'Angular Webpack Minimal Starter';
-    this.info = angular.version;
+    this.what = "Angular + TypeScript + Webpcak Minimal Starter!";
   }
 
 }
 
 angular.module('app', [])
-.controller('AppController', AppController);
+.directive('app', App);
 
 angular.bootstrap(document, ['app']);

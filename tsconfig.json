@@ -1,19 +1,13 @@
 {
-  "version": "1.5.0",
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "declaration": false,
-    "noImplicitAny": false,
-    "removeComments": true,
-    "noLib": false,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "sourceMap": true,
-    "listFiles": true,
-    "outDir": "dist"
+    "sourceMap": true
   },
-  "files": [
+  "exclude": [
+    "node_modules"
+  ],
+  "files":[
     "typings/angularjs/angular.d.ts"
   ]
 }
